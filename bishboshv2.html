@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övning 09 - BishBosh</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/progressbar.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+
+    <main class="flex-main">
+        <header class="headline-container">
+                <h1>Bish-Bosh 2.0</h1>
+        </header>
+
+
+
+        <div class="flex-half">
+            <div class="container">
+
+                <div class="form-container">
+                    <form id="formid">
+
+                        <div class="form-child">
+                            <label>Ange loop: [Defaultvärde: 100]: <input id="loopnrid" type="text" value="100"
+                                    name="loopnr"></label>
+                        </div>
+
+                        <div class="form-child">
+                            <label>Ange Bish siffra: <input id="bishid" type="text" value="3" name="bishnr"></label>
+                        </div>
+
+                        <div class="form-child">
+                            <label>Ange Bosh siffra: <input id="boshid" type="text" value="4" name="boshnr"></label>
+                        </div>
+
+                        <div class="form-child">
+                            <button id="formbtn" class="btn btn-success" type="button">Skicka</button>
+                            <button id="clearbtn" class="btn btn-danger" type="button">Återställ</button>
+                        </div>
+                    </form>
+
+                    <div class="form-child">
+                        <button id="infoid" class="btn btn-success" type="button">INFORMATION</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex-half">
+            <div class="form-child">
+                <div class="presentation-main">
+                    <div id="presentationid" class="presentation"></div>
+
+                </div>
+
+
+                <div class="progressbar-main">
+                    <div class="progressbar"></div>
+                </div>
+
+                <div id="usrmsgid" class="data-result"></div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="flex-footer">
+
+            <footer>
+                <p>Webmaster: Mikael Klevengård</p>
+                <p id="copyrightid"></p>
+            </footer>
+
+        </div>
+    </main>
+
+
+    <script src="/js/util.js"></script>
+    <script src="/js/formbishbosh.js"></script>
+    <script src="/js/infoScr.js"></script>
+</body>
+
+</html>

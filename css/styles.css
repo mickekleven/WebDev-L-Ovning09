@@ -1,0 +1,374 @@
+:root {
+    --color-success: #4CAF50;
+    --color-danger: #b30000;
+    --color-base: #fff;
+    --color-disable: #CCC;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    min-height: 1200px;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+input {
+    font-size: 20px;
+    padding-left: 10px;
+    color: var(--color-danger);
+}
+
+
+/***************************************************************
+    Button settings
+****************************************************************/
+
+.btn {
+    border: none;
+    color: white;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btn-danger,
+.btn-success {
+    color: var(--color-base);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+}
+
+
+.btn-danger {
+    background-color: var(--color-danger);
+}
+
+
+.btn-disable {
+    background-color: var(--color-disable);
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+
+/***************************************************************
+    form settings
+****************************************************************/
+
+form {
+    width: 100%;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container input {
+    width: 100%;
+    height: 50px;
+}
+
+
+.form-child {
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+select {
+    height: 50px;
+}
+
+
+.presentation {
+    width: 100%;
+}
+
+
+.presentation-main {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    overflow-x: auto;
+    border: 2px solid #000;
+}
+
+.presentation p {
+    padding: 5px 0 0 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.data-result {
+    padding: 20px 0 0 0;
+    line-height: 1.2px;
+}
+
+
+
+ul {
+    width: 100%;
+
+}
+
+ul li {
+    font-size: 25px;
+}
+
+.headline-container {
+    position: fixed;
+    height: 50px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-success);
+
+}
+
+.headline-container h1 {
+    color: var(--color-base);
+    margin: 0;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-success);
+    line-height: 1px;
+    color: var(--color-base);
+    padding: 10px;
+}
+
+/*******************************************************************
+    Flex-Container
+*******************************************************************/
+
+.flex-main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-header,
+.flex-footer,
+.flex-body,
+.flex-full {
+    flex: 0 1 100%;
+}
+
+
+.flex-footer {
+    text-align: center;
+}
+
+.flex-half {
+    flex: 0 1 49%;
+    margin-top: 100px;
+    height: 1200px;
+}
+
+@media (max-width:70em) {
+    .flex-half {
+        flex: 0 1 90%;
+        height: 320px;
+    }
+
+    .data-result {
+        padding: 20px 0 0 30px;
+    }
+
+
+    .form-container {
+        width: 90%;
+        max-width: none;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .presentation-main {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    footer {
+        position: fixed;
+    }
+}
+
+
+.flex-btn {
+    display: flex;
+    width: 100%;
+}
+
+.flex-btn-child {
+    flex: 0 1 49%;
+}
+
+
+
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+}
+
+/********************************************************
+    purchase list styles
+    ********************************************************/
+.purchase-main {
+    width: 30rem;
+    margin: 10rem auto;
+    height: 40rem;
+}
+
+.purchase-main input {
+    width: 100%;
+    height: 40px;
+}
+
+.purchase-main .flex-main,
+.flex-full {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.purchase-main p {
+    line-height: 1.2px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0 0 10px;
+    height: 1.1rem;
+}
+
+#purchasepresentation {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+}
+
+
+.pres-main {
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+}
+
+.pres-main__c1,
+.pres-main__c2 {
+    top: 0;
+    height: 20px;
+}
+
+.pres-main__c1 {
+    width: 84%;
+    margin-left: 0;
+
+}
+
+.pres-main__c2 {
+    position: absolute;
+    width: 14%;
+    top: 3px;
+    right: 0;
+    padding: 0;
+}
+
+.pres-main__c2 input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.pres-main__c2 p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.keep-it-simple-main {
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    width: 50rem;
+    padding: 1.2rem;
+    animation: border-exposer 4000ms 1 ease-in-out;
+
+}
+
+.keep-it-simple-main li {
+    margin: 1.2rem 0 0 10px;
+    font-size: 60px;
+    list-style-type: none;
+}
+
+.keep-it-simple-main li a {
+    text-decoration: none;
+}
+
+.keep-it-simple-main h1 {
+    font-size: 4rem;
+}
+
+.keep-it-simple-main h1,
+.keep-it-simple-main li a {
+    color: var(--color-success);
+}
+
+
+
+@keyframes border-exposer {
+
+    0% {
+        border: 0.4rem solid var(--color-success);
+        transform: rotateX(90deg);
+    }
+
+    50% {
+        border: 1.3rem solid var(--color-success);
+        transform: rotateX(45deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+        border: 0.4rem solid var(--color-danger);
+    }
+
+
+}
